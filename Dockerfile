@@ -16,4 +16,6 @@ RUN deps=' \
 	&& apt-get clean -y \
 	&& rm -rf /var/lib/apt/lists/*
 
+ADD ./templates /templates
+
 ENTRYPOINT ["/usr/local/bin/docker-gen"]
